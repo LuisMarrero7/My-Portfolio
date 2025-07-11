@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Suranna&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: bisque;
+    color: #525458;
+    min-width: 400px;
+}
+
+.figura {
+    border: solid 1px lightsalmon;
+    background-color: lightsalmon;
+    width: 350px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+a { 
+    color: #525458;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: salmon;  
+}
+
+a:active {
+    color: rgb(132, 32, 226);
+}
+
+.container {
+    max-width: 1200px;
+    margin-top: 80px;
+    padding-top: 30px;
+}
+
+.info {
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: semi-bold;
+    color: grey;
+    margin: 0;
+}
+
+.info-text h4 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 885px) {
+    .info {
+        display: inline;
+        text-align: left;
+    }
+}
+
+.card {
+    border-radius: 12px;
+    padding: 15px 25px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.bg-lila {
+    background: #a9bff9;
+}
+
+.bg-green {
+    background: #a6f6a6;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+.btn {
+    width: 100%;
+    background: lightsalmon;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: salmon;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 160, 122, 0.4);
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #525458;
+    margin-bottom: 10px;
+}
+
+.link-list {
+    padding: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.table {
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.table td {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.table th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background: none;
+    margin-bottom: 10px;
+}
+
+.table tr:hover {
+    background: rgb(252, 168, 159);
+}
+
+.table td:nth-child(1),
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    border-radius: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+} 
+
+.table th:nth-child(1),
+.table th:nth-child(2),
+.table th:nth-child(3) {
+    background: fixed;
+    background-color: #d6dbe0;
+    border-radius: 12px;
+}
+
+.navbar {
+    background: lightsalmon;
+    margin-bottom: 10px;
+    margin-top: 0;
+    margin-left: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-family: inherit;
+}
+
+.navbar ul li:hover {
+    background: lightyellow; 
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, .25);
+}  
+
+.navbar a {
+    color: #525458;
+    text-decoration: none;
+}
+
+.navbar ul li:last-child {
+    margin-right: 0;
+}
+
+/* Новые стили для формы и изображения */
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 500px;
+    height: 460px;
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Banner {
+    width: 500px;
+    height: 521px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+    display: block;
+    font-size: 16px;
+    color: #525458;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: lightsalmon;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 160, 122, 0.2);
+}
+
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 1100px) {
+    .form {
+        gap: 50px;
+    }
+    
+    .box, .Banner {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    
+    .box {
+        padding: 25px;
+    }
+}
